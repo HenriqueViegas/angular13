@@ -1,0 +1,19 @@
+<div class="aulas">
+  <h2>LIST-RENDER E INTERFACE E SERVICES</h2>
+  <h3>Animais: </h3>
+  <fieldset >Services
+    <ul>
+      <li>Geralmente ficam as <b>requisições para APIs</b></li>
+      <li>Cria-se um service com <b>ng g service nomeService</b></li>
+      <li>Importar no componente e iniciar no constructor</li>
+    </ul>
+  </fieldset>
+  <ul>
+    <li *ngFor="let animal of animals">
+      Nome: <a routerLink="/list/{{ animal.id }}">{{animal.name}}</a> | Tipo: {{animal.type}}
+      <button (click)="showAge(animal)">Show age</button>
+      <button (click)="removeAnimal(animal)">Excluir</button>
+    </li>
+  </ul>
+  <h3>{{animalDetails}}</h3>
+</div>

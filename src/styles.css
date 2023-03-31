@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding-bottom: 500px;
+}
+
+.aulas{
+  border-bottom: 1px solid red;
+  padding: 1em;
+  margin-bottom: 1em;
+}

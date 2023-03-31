@@ -1,0 +1,22 @@
+<div class="aulas">
+  <h2>TWO WAY DATA BINDING</h2>
+  <ul>
+    <li>É necessário importar o <b>FormsModule</b> no app.module.ts</li>
+    <li>É bastante utilizado com formulários</li>
+    <li>Tem que declarar o <b>ngModel</b> no input</li>
+  </ul>
+  <form>
+    <input type="text" [(ngModel)]="name"
+      name = "name"
+      placeholder="Digite seu nome"
+    >
+    <input type="submit" value="Enviar">
+    <input type="text" [(ngModel)]="age"
+      name="age"
+    >
+  </form>
+  <div *ngIf="name != ''">
+    <p>O nome é: {{ name }}</p>
+  </div>
+  <p *ngIf="age != undefined">A idade é: {{ age }}</p>
+</div>
